@@ -680,10 +680,7 @@ public class ParserGenerator
 		{
 			out.write("public class ");
 			out.write(class_name);
-			out.write(" extends ");
-			if (class_name.equals("Parser"))
-				out.write("beaver.");
-			out.write("Parser ");
+			out.write(" extends beaver.Parser ");
 			if (grammar.impls != null && grammar.impls.length > 0)
 			{
 				out.write("implements ");
